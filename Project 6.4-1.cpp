@@ -59,29 +59,32 @@ int SearchMin(int* a, const int size)
 int SearchFirst(int* a, const int size)
 {
 	int f = -1;
+	int i;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		if (a[i] > 0)
 
-		f = i;
 		break;
 	}
 
-		return f;
+	f = i;
+
+    return f;
 	
 }
 
 int SearchLast(int* a, const int size,const int First)
 {	
 	int f = -1;
-
-	for (int i = size; i >= 0; i--)
+	int i;
+	for (i = size; i >= 0; i--)
+	{
 		if (a[i] > 0)
-		{
-			f = i;
 			break;
-		}
+	}
+
+	f = i;
 
 	if (f != First)
 
